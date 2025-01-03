@@ -17,7 +17,7 @@ function App() {
     if (todoList) {
       updatedTodoList = todoList.map((data) => ({
         ...data,
-        date: new Date(data.created_at).toDateString(), // Add the new property
+        date: new Date(data.created_at).toDateString(),
       }));
     }
     setTodoList(updatedTodoList);
